@@ -1,0 +1,35 @@
+local function script1()
+local ohInstance1 = workspace.Prison_ITEMS.giver["AK-47"].ITEMPICKUP
+
+workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+end
+
+local function script2()
+local ohInstance1 = workspace.Prison_ITEMS.giver["Remington 870"].ITEMPICKUP
+
+workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+end
+
+local function script3()
+local ohInstance1 = workspace.Prison_ITEMS.single.Hammer.ITEMPICKUP
+
+workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+end
+
+local function script4()
+local ohInstance1 = workspace.Prison_ITEMS.giver["M9"].ITEMPICKUP
+
+workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+end
+
+local function script5()
+local ohInstance1 = workspace.Prison_ITEMS.single["Crude Knife"].ITEMPICKUP
+
+workspace.Remote.ItemHandler:InvokeServer(ohInstance1)
+end
+
+coroutine.wrap(script1)()
+coroutine.wrap(script2)()
+coroutine.wrap(script3)()
+coroutine.wrap(script4)()
+coroutine.wrap(script5)()
